@@ -1,149 +1,76 @@
-<div align="center">
+# ⭐ Star Development - Landing Page
 
-# HubMsg Landing Page
+Este repositório contém o código-fonte da landing page da **Star Development**, uma agência de desenvolvimento web focada em criar soluções digitais modernas, funcionais e de alto desempenho.
 
-![HubMsg Logo](../hub-message-landing-page/public/hubsys_favicon.ico)
-
-*Transforme seu WhatsApp em uma máquina de vendas com o chatbot inteligente da HubMsg!*
-
-Esta é a landing page oficial da **HubMsg**, desenvolvida para apresentar os recursos e benefícios da nossa plataforma de chatbot inteligente para WhatsApp. Descubra como a HubMsg pode otimizar seu atendimento ao cliente, qualificar leads e fornecer relatórios em tempo real.
-
-</div>
-
----
+A página foi construída com tecnologias modernas de frontend, seguindo uma arquitetura baseada em componentes para facilitar a manutenção e escalabilidade.
 
 ## 🚀 Tecnologias Utilizadas
 
-Este projeto foi construído com as seguintes tecnologias principais:
+Este projeto foi construído utilizando as seguintes tecnologias:
 
-* **[React](https://react.dev/)**: Biblioteca JavaScript para construção de interfaces.
-* **[Tailwind CSS](https://tailwindcss.com/)**: Framework CSS utilitário para estilização responsiva rápida.
-* **[Material UI (MUI)](https://mui.com/)**: Componentes React baseados no Material Design do Google.
-* **[Framer Motion](https://www.framer.com/motion/)**: Biblioteca para animações fluidas e declarativas.
-* **[React Router DOM](https://reactrouter.com/en/main)**: Gerenciamento de rotas para SPAs.
-* **[Tippy.js](https://atomiks.github.io/tippyjs/react/)**: Tooltips interativos e acessíveis.
-* **[Swiper](https://swiperjs.com/)**: Slider/carrossel moderno e responsivo.
-* **[React Icons](https://react-icons.github.io/react-icons/)**: Biblioteca de ícones populares em forma de componentes React.
-* **[Vercel Speed Insights](https://vercel.com/docs/concepts/speed-insights)**: Ferramenta de monitoramento de desempenho integrada.
+  * **[React](https://reactjs.org/)**: Biblioteca JavaScript para a construção de interfaces de usuário.
+  * **[Vite](https://vitejs.dev/)**: Ferramenta de build moderna que oferece uma experiência de desenvolvimento extremamente rápida.
+  * **[Tailwind CSS](https://tailwindcss.com/)**: Framework de CSS utility-first para a criação de designs customizados de forma rápida.
+  * **[React Router DOM](https://reactrouter.com/)**: Para gerenciamento de rotas e navegação entre páginas.
+  * **[Font Awesome](https://fontawesome.com/)**: Biblioteca de ícones vetoriais.
 
----
+## ⚙️ Instalação e Execução Local
 
-## 🧱 Estrutura do Projeto
+Para rodar este projeto na sua máquina local, siga os passos abaixo.
 
-```bash
-hub-message-landing-page
-├─ package-lock.json          # Arquivo de controle de versões das dependências
-├─ package.json               # Metadados do projeto e lista de dependências
-├─ public                     # Arquivos públicos acessíveis diretamente no navegador
-│  ├─ hubsys_favicon.ico      # Ícone da página
-│  ├─ index.html              # HTML base da aplicação
-│  └─ logo.png                # Logo principal usada na interface
-├─ README.md                  # Documentação principal do projeto
-├─ src                        # Código-fonte da aplicação
-│  ├─ App.js                  # Componente raiz do React
-│  ├─ assets                  # Recursos visuais (ícones, imagens, etc.)
-│  │  ├─ icons                # Ícones utilizados na aplicação
-│  │  │  └─ flags             # Bandeiras de países
-│  │  └─ images               # Imagens diversas da interface
-│  ├─ components              # Componentes reutilizáveis da interface
-│  ├─ data                    # Dados estáticos usados nos componentes
-│  ├─ index.css               # Estilos globais
-│  ├─ index.js                # Ponto de entrada do React DOM
-│  ├─ pages                   # Páginas da aplicação
-│  ├─ routes                  # Arquivo de configuração das rotas
-│  └─ styles                  # Arquivos de estilo adicionais
-└─ tailwind.config.js         # Configuração do Tailwind CSS
-```
+### Pré-requisitos
 
----
+  * [Node.js](https://nodejs.org/) (versão 18.x ou superior)
+  * npm (geralmente instalado junto com o Node.js)
 
-## 💻 Como Executar Localmente
+### Passos
 
-Siga os passos abaixo para configurar e executar a landing page da HubMsg localmente.
+1.  **Clone o repositório:**
 
-### Requisitos
+    ```bash
+    git clone https://github.com/seu-usuario/star-lading-page.git
+    ```
 
-* **Node.js** (recomendado usar a versão LTS)
-* **npm** (Node Package Manager)
+2.  **Navegue até a pasta do projeto:**
 
-> 🔗 [Instalar Node.js](https://nodejs.org/en/download/)
+    ```bash
+    cd star-lading-page
+    ```
 
-### Instalação
+3.  **Instale as dependências:**
+    Este comando irá ler o arquivo `package.json` e instalar todas as bibliotecas necessárias.
 
-1. **Clone o repositório:**
+    ```bash
+    npm install
+    ```
 
-```bash
-git clone https://github.com/hubsys-io/hub-message-landing-page.git
-```
+4.  **Configure as Variáveis de Ambiente:**
+    Crie um arquivo chamado `.env` na raiz do projeto e adicione sua chave de acesso do serviço de formulários (Web3Forms), se aplicável.
 
-2. **Acesse a pasta do projeto:**
+    ```
+    # Exemplo de conteúdo para o arquivo .env
+    VITE_WEB3FORMS_ACCESS_KEY=SUA_CHAVE_DE_ACESSO_AQUI
+    ```
 
-```bash
-cd hub-message-landing-page
-```
+5.  **Execute o servidor de desenvolvimento:**
+    Este comando iniciará a aplicação em modo de desenvolvimento, geralmente na porta `5173`.
 
-3. **Instale as dependências:**
+    ```bash
+    npm run dev
+    ```
 
-```bash
-npm install
-```
+6.  **Abra no navegador:**
+    Acesse [`http://localhost:5173`](https://www.google.com/search?q=http://localhost:5173) para ver a aplicação funcionando.
 
-### Configuração do PostCSS e Tailwind CSS
+## 🏗️ Estrutura do Projeto
 
-Certifique-se de que o arquivo `postcss.config.js` esteja presente na raiz do projeto:
+A estrutura de pastas foi organizada para manter uma clara separação de responsabilidades:
 
-```javascript
-// postcss.config.js
-module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-};
-```
-
-E o `tailwind.config.js` deve conter:
-
-```javascript
-// tailwind.config.js
-module.exports = {
-  content: [
-    './src/**/*.{js,jsx,ts,tsx}',
-  ],
-  theme: {
-    extend: {
-      colors: {
-        'custom-green': '#588C3C',
-      },
-    },
-  },
-  plugins: [],
-};
-```
-
-### Executando o Projeto
-
-Para iniciar o servidor de desenvolvimento:
-
-```bash
-npm start
-```
-
-A aplicação será aberta automaticamente em `http://localhost:3000`.
-
----
-
-## 🛠️ Scripts Disponíveis
-
-* `npm start`: Inicia o servidor de desenvolvimento.
-* `npm run build`: Gera os arquivos otimizados para produção na pasta `build/`.
-* `npm test`: Executa os testes (Jest).
-* `npm run eject`: Expõe a configuração do React. **(Irreversível!)**
-
----
-
-## 📄 Licença
-
-Este projeto está licenciado sob a **Licença MIT**. Veja o arquivo `LICENSE` para mais detalhes.
-
----
+  * **`/public`**: Contém assets estáticos, como o `favicon.svg`.
+  * **`/src/assets`**: Contém assets que são processados pelo Vite, como imagens e ícones em formato de componentes.
+  * **`/src/components`**: Onde todos os componentes React reutilizáveis estão localizados, separados por funcionalidade (ex: `/home`, `/shop`).
+  * **`/src/pages`**: Contém os componentes que representam as páginas completas da aplicação (ex: `Home.jsx`, `ShopPage.jsx`).
+  * **`/src/routes`**: Configuração do `react-router-dom` para mapear as URLs para os componentes de página.
+  * **`/src/services`**: Módulos para interagir com APIs externas (ex: Google Books API).
+  * **`App.jsx`**: O componente raiz que define o layout principal (Header/Footer) e renderiza as páginas através do sistema de rotas.
+  * **`main.jsx`**: O ponto de entrada da aplicação React.
