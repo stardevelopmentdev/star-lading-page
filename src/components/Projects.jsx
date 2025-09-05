@@ -101,14 +101,14 @@ const Projects = () => {
             <ProjectCard key={proj.title} {...proj} />
           ))}
         </div>
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <a
             href="#"
             className="border-2 border-star-pink text-star-pink hover:bg-star-pink hover:text-white px-8 py-3 rounded-full font-semibold transition duration-300 inline-block cursor-pointer"
           >
             Ver Portfólio Completo
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

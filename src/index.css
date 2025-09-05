@@ -11,11 +11,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: transparent;
-    /* Fundo branco padrão */
-    
 }
 
-main,
+section,
 footer {
     padding-left: 4em;
     padding-right: 4rem;
